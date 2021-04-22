@@ -48,7 +48,8 @@
 	    position: absolute;
     text-align: -webkit-center;
     display: flex;
-    right: 31.4%;
+    right: 0%;
+    left: 0%;
     top: 3.3%;
 	z-index: 5 !important;
 	animation: none !important;
