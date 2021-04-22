@@ -5,8 +5,7 @@
 divider {
     display: block;
     height: 5px;
-    border: 0;
-    border-top: 5px solid var(--rizuri-accent-2);
+    background: var(--rizuri-accent-gradient);
     margin: 0;
     padding: 0;
 }
