@@ -17,13 +17,70 @@
 	color: var(--rizuri-accent);
 }
 
+.navbar-nav {
+	color: #000;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    background-image: var(--rizuri-accent-gradient);
+	animation: rgbWave 6s linear infinite !important;
+	background-size: 400% 400%;
+}
 .text-outline {
-	color: black;
+	content: attr(data-text);
+	z-index: 0 !important;
+	color: transparent;
 	text-shadow:
 		-2px -2px 0 var(--rizuri-accent),
 		2px -2px 0 var(--rizuri-accent),
 		-2px 2px 0 var(--rizuri-accent),
 		2px 2px 0 var(--rizuri-accent);
+	animation: none !important;
+}
+.rgb-avatar-nospin img {
+    position: relative;
+    right: 0;
+    left: 0;
+    justify-self: center;
+}
+.rgb-avatar-nospin {
+	    position: absolute;
+    text-align: -webkit-center;
+    display: flex;
+    right: 31.4%;
+    top: 3.3%;
+	z-index: 5 !important;
+	animation: none !important;
+	display: inline;
+}
+.rgb-avatar img {
+	display: none;
+}
+.rgb-avatar {
+	height: 250px;
+	width: 250px;
+	padding: 10px;
+	border-radius: 50%;
+	display: inline-block;
+    background-image: var(--rizuri-accent-gradient-1);
+	animation: spin 3s linear infinite !important;
+	background-size: 500% 100%;
+}
+
+.text-outline-rgb {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1 !important;
+	color: #000;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    background-image: var(--rizuri-accent-gradient);
+	animation: rgbWave 6s linear infinite !important;
+	background-size: 400% 400%;
 }
 
 .title {

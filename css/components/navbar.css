@@ -23,9 +23,6 @@
 }
 
 .header-pre h3, .header-pre h1 {
-	z-index: 1;
-	-webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.25s both;
-	animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.25s both;
 }
 
 .header-pre img {
@@ -34,7 +31,10 @@
 	animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	border-radius: 50%;
 	max-width: 15rem;
-	border: 5px var(--rizuri-accent) solid !important;
+	position: absolute;
+	display: unset;
+	justify-self: center;
+	z-index: 0 !important;
 }
 
 /*
