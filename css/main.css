@@ -1,6 +1,6 @@
 @import "1.css";
 @import "animations.css";
-@import "components.css";animation: rainbow 6s linear infinite;
+@import "components.css";
 @import "fonts.css";
 
 :root {
