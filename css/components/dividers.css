@@ -5,7 +5,8 @@
 divider {
     display: block;
     height: 5px;
-    background: var(--rizuri-accent-gradient);
+    border: 0;
+    border-top: 5px solid var(--rizuri-accent-2);
     margin: 0;
     padding: 0;
 }
@@ -36,20 +37,19 @@ divider.end-header {
 		"Segoe UI Symbol";
 	letter-spacing: .01rem;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.004);
-	font-size: 1.6rem;
-	color: var(--rizuri-accent-2);
-	display: flex;
-	align-items: center;
-	width: 140%;
-	margin-left: -2em;
-	text-align: center;
+    font-size: 1.6rem;
+    color: var(--rizuri-accent-2);
+    display: flex;
+    align-items: center;
+    width: 140%;
+    margin-left: -2em;
+    text-align: center;
 }
 
 .lbl-divider::after {
 	content: '';
 	flex: 1;
-	background: var(--rizuri-accent-gradient);
-	border-bottom: 5px solid transparent;
+	border-bottom: 5px solid var(--rizuri-accent-2);
 	margin-left: 0.5em;
 }
 
@@ -83,7 +83,6 @@ divider.end-header {
 .lbl-divider-short::after {
 	content: '';
 	flex: 1;
-	background: var(--rizuri-accent-gradient);
-	border-bottom: 5px solid transparent;
+	border-bottom: 5px solid var(--rizuri-accent-2);
 	margin-left: 0.5em;
 }
